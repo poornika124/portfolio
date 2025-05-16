@@ -1,0 +1,12 @@
+let menu=document.querySelector('#menu-icon');
+let navbar=document.querySelector('.navbar');
+menu.oneclick=()=>
+{
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
+window.onescroll=()=>
+{
+    menu.classList.remove('bx-x');
+    navbar.classList.remove('active');
+}
